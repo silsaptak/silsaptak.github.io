@@ -19,7 +19,14 @@ body {
   margin: 0 auto;
   padding: 35px 30px;
 }
+.bio a {
+  color: #d000d0;
+  text-decoration: none;
+}
 
+.bio a:hover {
+  text-decoration: underline;
+}
 .hero {
   display: flex;
   justify-content: space-between;
