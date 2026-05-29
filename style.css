@@ -54,7 +54,25 @@ body {
   line-height: 1.45;
   margin-bottom: 24px;
 }
+.contact-links {
+  margin-top: 25px;
+}
 
+.contact-links a {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 7px 18px;
+  border: 1px solid black;
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.contact-links a:hover {
+  background: black;
+  color: white;
+}
 .profile img {
   width: 290px;
   border-radius: 5px;
