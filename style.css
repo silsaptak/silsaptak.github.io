@@ -263,3 +263,107 @@ body {
     font-size: 18px;
   }
 }
+/* Research intro line */
+
+.intro-line {
+  font-size: 18px;
+  color: #555;
+  margin-top: -8px;
+  margin-bottom: 28px;
+}
+
+.intro-line a {
+  color: #3f6f3f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.intro-line a:hover {
+  text-decoration: underline;
+}
+
+/* Research highlight tags */
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+  margin-bottom: 28px;
+}
+
+.research-tags span {
+  display: inline-block;
+  padding: 9px 15px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.research-tags span:nth-child(1) {
+  background: #e8f1ff;
+  color: #1f5fa8;
+}
+
+.research-tags span:nth-child(2) {
+  background: #ffecec;
+  color: #b34a4a;
+}
+
+.research-tags span:nth-child(3) {
+  background: #eaf7ea;
+  color: #3f6f3f;
+}
+
+.research-tags span:nth-child(4) {
+  background: #f7efd9;
+  color: #8a6a20;
+}
+
+.research-tags span:nth-child(5) {
+  background: #f0e8ff;
+  color: #6b3fb0;
+}
+
+.research-tags span:nth-child(6) {
+  background: #e8f6f8;
+  color: #24727a;
+}
+
+/* Open collaboration box */
+
+.open-box {
+  background: #f2eee7;
+  border-left: 4px solid #c8aa75;
+  border-radius: 6px;
+  padding: 16px 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-top: 8px;
+  margin-bottom: 26px;
+  max-width: 780px;
+}
+
+.open-box strong {
+  font-weight: 800;
+}
+
+.open-box a {
+  color: #3f6f3f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.open-box a:hover {
+  text-decoration: underline;
+}
+
+/* Make bio text slightly cleaner */
+
+.bio p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 22px;
+}
