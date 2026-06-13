@@ -25,7 +25,92 @@ body {
 .bio {
   flex: 1;
 }
+.intro-line {
+  font-size: 18px;
+  color: #555;
+  margin-top: -10px;
+  margin-bottom: 28px;
+}
 
+.intro-line a {
+  color: #3f6f3f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.intro-line a:hover {
+  text-decoration: underline;
+}
+
+.bio p strong {
+  font-weight: 700;
+}
+
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+  margin-bottom: 28px;
+}
+
+.research-tags span {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.research-tags span:nth-child(1) {
+  background: #e8f1ff;
+  color: #1f5fa8;
+}
+
+.research-tags span:nth-child(2) {
+  background: #ffecec;
+  color: #b34a4a;
+}
+
+.research-tags span:nth-child(3) {
+  background: #eaf7ea;
+  color: #3f6f3f;
+}
+
+.research-tags span:nth-child(4) {
+  background: #f7efd9;
+  color: #8a6a20;
+}
+
+.research-tags span:nth-child(5) {
+  background: #f0e8ff;
+  color: #6b3fb0;
+}
+
+.research-tags span:nth-child(6) {
+  background: #e8f6f8;
+  color: #24727a;
+}
+
+.open-box {
+  background: #f2eee7;
+  border-left: 4px solid #c8aa75;
+  border-radius: 6px;
+  padding: 16px 20px;
+  font-size: 16px;
+  line-height: 1.55;
+  margin-bottom: 24px;
+}
+
+.open-box a {
+  color: #3f6f3f;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.open-box a:hover {
+  text-decoration: underline;
+}
 .bio h1 {
   font-size: 48px;
   font-weight: 300;
@@ -37,9 +122,9 @@ body {
 }
 
 .bio p {
-  font-size: 20px;
-  line-height: 1.45;
-  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 1.55;
+  margin-bottom: 22px;
 }
 
 .bio a {
