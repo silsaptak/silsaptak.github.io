@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Saptak Sil</title>
-  <meta name="description" content="Saptak Sil — Ph.D. student at IIT Kharagpur working on 3D point cloud part segmentation, 3D co-segmentation, scene reconstruction and exocentric-to-egocentric vision." />
+  <meta name="description" content="Saptak Sil — Ph.D. student at IIT Kharagpur working on 3D point cloud part segmentation, 3D co-segmentation, and single-image 3D scene understanding." />
 
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css?v=4" />
 
   <!-- Font Awesome icons -->
   <link
@@ -31,32 +31,31 @@
 
         <p>
           I work on <strong>3D computer vision</strong>, with a focus on understanding the
-          <strong>part structure of 3D shapes</strong> from point clouds using as little
-          supervision as possible. My current work spans two directions:
-          <strong>weakly supervised plant part segmentation</strong> and
+          <strong>part structure of 3D shapes</strong> from point clouds. My current work
+          spans two directions: <strong>plant part segmentation</strong> and
           <strong>unsupervised 3D shape co-segmentation</strong>.
         </p>
 
         <p>
-          Both build on <strong>self-supervised point cloud representations</strong>
-          (Point-MAE), combined with <strong>clustering</strong> and
-          <strong>prototype-based matching</strong>, to produce consistent semantic and
-          instance-level parts across shapes and species with limited annotations.
+          Both build on <strong>Point-MAE</strong> point cloud features, combined with
+          <strong>clustering</strong> and <strong>prototype-based matching</strong>, to
+          produce semantic and instance-level parts that stay consistent across shapes
+          and plant species.
         </p>
 
         <p>
-          I am also interested in <strong>3D scene reconstruction</strong> and
-          <strong>exocentric-to-egocentric (exo&rarr;ego) vision</strong>: recovering
-          people, scenes and cameras from third-person video and using that geometry to
-          synthesize the first-person view.
+          Next, I am extending this to <strong>single-image 3D scene understanding</strong>:
+          lifting an ordinary photo into a 3D scene and segmenting it into people, objects
+          and their <strong>parts</strong>, so that part- and co-segmentation work on
+          everyday images rather than only on scanned point clouds.
         </p>
 
         <div class="research-tags">
           <span class="tag tag-blue">3D Point Clouds</span>
           <span class="tag tag-red">Part Segmentation</span>
           <span class="tag tag-green">3D Co-segmentation</span>
-          <span class="tag tag-teal">Scene Reconstruction</span>
-          <span class="tag tag-orange">Exo&rarr;Ego Vision</span>
+          <span class="tag tag-teal">Single-Image 3D</span>
+          <span class="tag tag-orange">3D Scene Understanding</span>
         </div>
 
         <div class="open-box">
@@ -94,13 +93,10 @@
       <div class="research-grid">
         <div class="research-card">
           <span class="status status-ongoing">Ongoing</span>
-          <h4>Weakly Supervised Plant Part Segmentation</h4>
+          <h4>Plant Part Segmentation from Point Clouds</h4>
           <p>
-            Semantic and instance segmentation of plant point clouds (leaves, stems)
-            with limited labels. A shared Point-MAE encoder is trained with
-            reconstruction and contrastive objectives; at inference, plants are
-            over-segmented into fragments, matched against learned part prototypes,
-            and refined with a fragment adjacency graph.
+            Joint semantic and instance segmentation of plant point clouds (leaves,
+            stems).
           </p>
           <p class="card-meta">Pheno4D · PLANesT-3D · Point-MAE · Prototypes</p>
         </div>
@@ -110,35 +106,23 @@
           <h4>Unsupervised 3D Shape Co-segmentation</h4>
           <p>
             Discovering consistent parts across a collection of 3D shapes without any
-            part labels. The pipeline uses self-supervised Point-MAE features to group
-            points into parts that correspond across shapes, and is evaluated against
-            prior co-segmentation methods such as AdaCoSeg.
+            part labels.
           </p>
           <p class="card-meta">Point Clouds · Self-Supervised Features · Rand Index</p>
         </div>
       </div>
 
-      <h3 class="research-subhead">Also Exploring</h3>
+      <h3 class="research-subhead">Interest</h3>
 
-      <div class="research-grid">
+      <div class="research-grid one-col">
         <div class="research-card">
-          <span class="status status-interest">Interest</span>
-          <h4>3D Scene Reconstruction</h4>
+          <span class="status status-interest">Upcoming</span>
+          <h4>From a Single Image to Part-Aware 3D Scenes</h4>
           <p>
-            Metric reconstruction of humans, scenes and camera poses from sparse
-            multi-view video, as a geometric foundation for downstream view synthesis.
+            Lifting a single RGB image into a 3D scene and segmenting it in 3D into the
+            scene layout, objects and their parts.
           </p>
-        </div>
-
-        <div class="research-card">
-          <span class="status status-interest">Interest</span>
-          <h4>Exocentric-to-Egocentric Video Generation</h4>
-          <p>
-            Generating a first-person (egocentric) view from third-person (exocentric)
-            cameras by reconstructing the scene in 3D, rendering the ego viewpoint, and
-            completing unseen regions with confidence-aware generative models.
-          </p>
-          <p class="card-meta">Ego-Exo4D</p>
+          <p class="card-meta">Single-Image 3D Reconstruction · Part / Co- / Scene Segmentation · Human&ndash;Object Interaction</p>
         </div>
       </div>
     </section>
@@ -191,7 +175,7 @@
           <h3>Detecting Profile Cloning on Online Social Networks with Machine Learning</h3>
 
           <p class="authors">
-            <strong>Saptak Sil</strong> and Munmun Bhattacharya
+            <strong>Saptak Sil</strong>, Munmun Bhattacharya, and Arpita Talukdar
           </p>
 
           <p class="venue">
@@ -204,8 +188,7 @@
           </p>
 
           <div class="buttons">
-            <!-- TODO: replace # with the Springer link -->
-          <a href="https://link.springer.com/chapter/10.1007/978-3-032-17184-9_4" target="_blank">
+            <a href="https://link.springer.com/chapter/10.1007/978-3-032-17184-9_4" target="_blank">
             PAPER
           </a>
           </div>
