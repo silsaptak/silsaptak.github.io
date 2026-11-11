@@ -7,7 +7,7 @@
   <title>Saptak Sil</title>
   <meta name="description" content="Saptak Sil — Ph.D. student at IIT Kharagpur working on 3D point cloud part segmentation, 3D co-segmentation, and single-image 3D scene understanding." />
 
-  <link rel="stylesheet" href="style.css?v=4" />
+  <link rel="stylesheet" href="style.css?v=5" />
 
   <!-- Font Awesome icons -->
   <link
@@ -96,7 +96,10 @@
           <h4>Plant Part Segmentation from Point Clouds</h4>
           <p>
             Joint semantic and instance segmentation of plant point clouds (leaves,
-            stems).
+            stems). A shared Point-MAE encoder is trained with reconstruction, semantic
+            contrastive and instance discriminative losses; at inference, plants are
+            over-segmented into fragments, matched against learned part prototypes,
+            and refined with a fragment adjacency graph.
           </p>
           <p class="card-meta">Pheno4D · PLANesT-3D · Point-MAE · Prototypes</p>
         </div>
@@ -106,13 +109,15 @@
           <h4>Unsupervised 3D Shape Co-segmentation</h4>
           <p>
             Discovering consistent parts across a collection of 3D shapes without any
-            part labels.
+            part labels. The pipeline uses self-supervised Point-MAE features to group
+            points into parts that correspond across shapes, and is evaluated against
+            prior co-segmentation methods such as AdaCoSeg.
           </p>
           <p class="card-meta">Point Clouds · Self-Supervised Features · Rand Index</p>
         </div>
       </div>
 
-      <h3 class="research-subhead">Interest</h3>
+      <h3 class="research-subhead">Next Direction</h3>
 
       <div class="research-grid one-col">
         <div class="research-card">
@@ -120,10 +125,46 @@
           <h4>From a Single Image to Part-Aware 3D Scenes</h4>
           <p>
             Lifting a single RGB image into a 3D scene and segmenting it in 3D into the
-            scene layout, objects and their parts.
+            scene layout, people, objects and their parts. The goal is to bring part
+            segmentation and co-segmentation from curated 3D scans to everyday images,
+            using cues such as human&ndash;object interaction to decide where one part
+            ends and another begins.
           </p>
           <p class="card-meta">Single-Image 3D Reconstruction · Part / Co- / Scene Segmentation · Human&ndash;Object Interaction</p>
         </div>
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section class="experience">
+      <h2>Experience</h2>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <div>
+            <h3>Teaching Assistant &mdash; Programming and Data Structures Lab</h3>
+            <p class="exp-org">Indian Institute of Technology Kharagpur</p>
+          </div>
+          <span class="exp-date">Jan 2026 &ndash; Present</span>
+        </div>
+        <ul>
+          <li>Assist undergraduate students in lab sessions on C programming and data structures.</li>
+          <li>Help students debug their programs and evaluate lab tests and assignments.</li>
+        </ul>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <div>
+            <h3>Junior Software Developer</h3>
+            <p class="exp-org">Cognizant Technology Solutions, Kolkata</p>
+          </div>
+          <span class="exp-date">Aug 2022 &ndash; Sep 2023</span>
+        </div>
+        <ul>
+          <li>Worked on the analysis, design, implementation and support of insurance software products (Java, SQL).</li>
+          <li>Conducted code reviews and post-release testing; reduced ticket volume by 15%.</li>
+        </ul>
       </div>
     </section>
 
