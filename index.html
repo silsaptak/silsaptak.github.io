@@ -7,7 +7,7 @@
   <title>Saptak Sil</title>
   <meta name="description" content="Saptak Sil — Ph.D. student at IIT Kharagpur working on 3D point cloud part segmentation, 3D co-segmentation, and single-image 3D scene understanding." />
 
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=6" />
 
   <!-- Font Awesome icons -->
   <link
@@ -30,24 +30,14 @@
         </p>
 
         <p>
-          I work on <strong>3D computer vision</strong>, with a focus on understanding the
-          <strong>part structure of 3D shapes</strong> from point clouds. My current work
-          spans two directions: <strong>plant part segmentation</strong> and
-          <strong>unsupervised 3D shape co-segmentation</strong>.
+          I work on <strong>3D computer vision</strong>. My research asks how a machine can
+          break a 3D object into meaningful <strong>parts</strong>&mdash;the leaves and stem
+          of a plant, or the seat and legs of a chair&mdash;directly from a point cloud.
         </p>
 
         <p>
-          Both build on <strong>Point-MAE</strong> point cloud features, combined with
-          <strong>clustering</strong> and <strong>prototype-based matching</strong>, to
-          produce semantic and instance-level parts that stay consistent across shapes
-          and plant species.
-        </p>
-
-        <p>
-          Next, I am extending this to <strong>single-image 3D scene understanding</strong>:
-          lifting an ordinary photo into a 3D scene and segmenting it into people, objects
-          and their <strong>parts</strong>, so that part- and co-segmentation work on
-          everyday images rather than only on scanned point clouds.
+          Next, I want to get the same part-level understanding from a
+          <strong>single photo</strong>, by lifting it into 3D.
         </p>
 
         <div class="research-tags">
@@ -95,25 +85,22 @@
           <span class="status status-ongoing">Ongoing</span>
           <h4>Plant Part Segmentation from Point Clouds</h4>
           <p>
-            Joint semantic and instance segmentation of plant point clouds (leaves,
-            stems). A shared Point-MAE encoder is trained with reconstruction, semantic
-            contrastive and instance discriminative losses; at inference, plants are
-            over-segmented into fragments, matched against learned part prototypes,
-            and refined with a fragment adjacency graph.
+            Leaves overlap, look alike and change shape as a plant grows. The goal is to
+            label every point of a 3D plant scan as leaf or stem and to separate
+            individual leaves, so growth can be measured automatically.
           </p>
-          <p class="card-meta">Pheno4D · PLANesT-3D · Point-MAE · Prototypes</p>
+          <p class="card-meta">Pheno4D · PLANesT-3D</p>
         </div>
 
         <div class="research-card">
           <span class="status status-ongoing">Ongoing</span>
           <h4>Unsupervised 3D Shape Co-segmentation</h4>
           <p>
-            Discovering consistent parts across a collection of 3D shapes without any
-            part labels. The pipeline uses self-supervised Point-MAE features to group
-            points into parts that correspond across shapes, and is evaluated against
-            prior co-segmentation methods such as AdaCoSeg.
+            Given many shapes of one category, such as chairs, find the parts that
+            correspond across all of them&mdash;every seat, back and leg&mdash;without a
+            single labelled example.
           </p>
-          <p class="card-meta">Point Clouds · Self-Supervised Features · Rand Index</p>
+          <p class="card-meta">Unsupervised · Point Clouds</p>
         </div>
       </div>
 
@@ -124,13 +111,46 @@
           <span class="status status-interest">Upcoming</span>
           <h4>From a Single Image to Part-Aware 3D Scenes</h4>
           <p>
-            Lifting a single RGB image into a 3D scene and segmenting it in 3D into the
-            scene layout, people, objects and their parts. The goal is to bring part
-            segmentation and co-segmentation from curated 3D scans to everyday images,
-            using cues such as human&ndash;object interaction to decide where one part
-            ends and another begins.
+            Part segmentation today needs a full 3D scan. Can we get the same
+            understanding from one everyday photo&mdash;recovering the scene in 3D and
+            splitting its people and objects into parts?
           </p>
-          <p class="card-meta">Single-Image 3D Reconstruction · Part / Co- / Scene Segmentation · Human&ndash;Object Interaction</p>
+          <p class="card-meta">Single-Image 3D · Part &amp; Scene Segmentation</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section class="experience">
+      <h2>Education</h2>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <div>
+            <h3>Ph.D. in Computer Science</h3>
+            <p class="exp-org">Indian Institute of Technology Kharagpur</p>
+          </div>
+          <span class="exp-date">Jun 2025 &ndash; Present</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <div>
+            <h3>M.E. in Information Technology</h3>
+            <p class="exp-org">Jadavpur University &middot; CGPA 8.28</p>
+          </div>
+          <span class="exp-date">Sep 2023 &ndash; Jun 2025</span>
+        </div>
+      </div>
+
+      <div class="exp-item">
+        <div class="exp-head">
+          <div>
+            <h3>B.Tech. in Electronics and Communication Engineering</h3>
+            <p class="exp-org">Institute of Engineering and Management, Kolkata &middot; CGPA 9.43</p>
+          </div>
+          <span class="exp-date">Aug 2018 &ndash; Jun 2022</span>
         </div>
       </div>
     </section>
